@@ -1,17 +1,27 @@
 import React from 'react';
 import { Root, Routes } from 'react-static';
 import { Link } from '@reach/router';
+import Header from 'components/Header/Header.jsx';
+import HeaderLinks from 'components/Header/HeaderLinks.jsx';
 
-import './app.css';
+import './app.scss';
+
+const dashboardRoutes = [];
 
 function App() {
   return (
     <Root>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
+      <Header
+        color="transparent"
+        routes={dashboardRoutes}
+        brand="Material Kit React"
+        rightLinks={<HeaderLinks />}
+        fixed
+        changeColorOnScroll={{
+          height: 400,
+          color: 'white'
+        }}
+      />
       <div className="content">
         <Routes />
       </div>

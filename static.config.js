@@ -1,7 +1,5 @@
 import axios from 'axios';
-// static.config.js
 import { createGenerateClassName } from '@material-ui/core/styles';
-
 const generateClassName = createGenerateClassName();
 export default {
   plugins: [
@@ -12,7 +10,8 @@ export default {
           generateClassName
         }
       }
-    ]
+    ],
+    ['react-static-plugin-sass']
   ],
   getSiteData: () => ({
     title: 'React Static'
