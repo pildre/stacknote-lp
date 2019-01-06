@@ -15,14 +15,19 @@
     "@reach/router": "^1.2.1",
     "axios": "^0.18.0",
     "classnames": "^2.2.6",
+    "moment": "^2.23.0",
+    "nouislider": "^12.1.0",
     "react": "^16.6.3",
+    "react-datetime": "^2.16.3",
     "react-dom": "^16.6.3",
     "react-hot-loader": "^4.3.12",
     "react-jss": "^8.6.1",
     "react-router-dom": "^4.3.1",
+    "react-slick": "^0.23.2",
     "react-static": "^6.0.18",
     "react-static-plugin-jss": "^6.1.1",
-    "react-static-plugin-sass": "^6.1.1"
+    "react-static-plugin-sass": "^6.1.1",
+    "react-swipeable-views": "^0.13.0"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
