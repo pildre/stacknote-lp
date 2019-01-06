@@ -12,8 +12,8 @@ https://github.com/nozzle/react-static
 > ![](https://avatars2.githubusercontent.com/u/5400727?s=400&v=4)
 
 ### material kit
-https://demos.creative-tim.com/material-kit-react/#/
-[material-kit-react document](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial)
+- https://demos.creative-tim.com/material-kit-react/#/
+- [material-kit-react document](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial)
 
 > ### [Material Kit React by Creative Tim](https://demos.creative-tim.com/material-kit-react/#/documentation/tutorial)
 > Material Kit React is a free kit template designed to be beautiful and simple. It is built on top of Material-UI and it is fully responsive.
