@@ -17,9 +17,9 @@ import Parallax from 'components/Parallax/Parallax.jsx';
 import landingPageStyle from 'assets/jss/material-kit-react/views/landingPage.jsx';
 
 // Sections for this page
-import ProductSection from './Sections/ProductSection.jsx';
-import TeamSection from './Sections/TeamSection.jsx';
-import WorkSection from './Sections/WorkSection.jsx';
+import ProductSection from './LandingSections/ProductSection.jsx';
+import TeamSection from './LandingSections/TeamSection.jsx';
+import WorkSection from './LandingSections/WorkSection.jsx';
 
 class LandingPage extends React.Component {
   render() {
