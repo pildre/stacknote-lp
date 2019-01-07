@@ -8,14 +8,12 @@ import { Link } from '@reach/router';
 import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
 // core components
-import Header from 'components/Header/Header.jsx';
 import Footer from 'components/Footer/Footer.jsx';
 import GridContainer from 'components/Grid/GridContainer.jsx';
 import GridItem from 'components/Grid/GridItem.jsx';
 import Button from 'components/CustomButtons/Button.jsx';
 import Parallax from 'components/Parallax/Parallax.jsx';
 // sections for this page
-import HeaderLinks from 'components/Header/HeaderLinks.jsx';
 import SectionBasics from './ComponentsSections/SectionBasics.jsx';
 import SectionNavbars from './ComponentsSections/SectionNavbars.jsx';
 import SectionTabs from './ComponentsSections/SectionTabs.jsx';
@@ -36,17 +34,6 @@ class Components extends React.Component {
     const { classes, ...rest } = this.props;
     return (
       <div>
-        <Header
-          brand="Material Kit React"
-          rightLinks={<HeaderLinks />}
-          fixed
-          color="transparent"
-          changeColorOnScroll={{
-            height: 400,
-            color: 'white'
-          }}
-          {...rest}
-        />
         <Parallax image={require('assets/img/bg4.jpg')}>
           <div className={classes.container}>
             <GridContainer>
@@ -74,7 +61,7 @@ class Components extends React.Component {
           <SectionCompletedExamples />
           <SectionLogin />
           <GridItem md={12} className={classes.textCenter}>
-            <Link to={'/landing'} className={classes.link}>
+            <Link to={'/login'} className={classes.link}>
               <Button color="primary" size="lg" simple>
                 View Login Page
               </Button>
