@@ -14,6 +14,8 @@ import GridItem from 'components/Grid/GridItem.jsx';
 import Button from 'components/CustomButtons/Button.jsx';
 import Parallax from 'components/Parallax/Parallax.jsx';
 // sections for this page
+import Header from 'components/Header/Header.jsx';
+import HeaderLinks from 'components/Header/HeaderLinks.jsx';
 import SectionBasics from './ComponentsSections/SectionBasics.jsx';
 import SectionNavbars from './ComponentsSections/SectionNavbars.jsx';
 import SectionTabs from './ComponentsSections/SectionTabs.jsx';
@@ -32,8 +34,19 @@ import componentsStyle from 'assets/jss/material-kit-react/views/components.jsx'
 class Components extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
+    console.log(classes);
     return (
       <div>
+        <Header
+          color="transparent"
+          brand="Material Kit React"
+          rightLinks={<HeaderLinks />}
+          fixed
+          changeColorOnScroll={{
+            height: 400,
+            color: 'white'
+          }}
+        />
         <Parallax image={require('assets/img/bg4.jpg')}>
           <div className={classes.container}>
             <GridContainer>

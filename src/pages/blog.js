@@ -2,17 +2,32 @@ import React from 'react';
 import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
 
+import Header from 'components/Header/Header.jsx';
+import HeaderLinks from 'components/Header/HeaderLinks.jsx';
+import GridContainer from 'components/Grid/GridContainer.jsx';
+import GridItem from 'components/Grid/GridItem.jsx';
+
 export default withRouteData(({ posts }) => (
   <div>
-    <h1>It's blog time.</h1>
-    <br />
-    All Posts:
-    <ul>
-      {posts.map(post => (
-        <li key={post.id}>
-          <Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
-        </li>
-      ))}
-    </ul>
+    <Header
+      color="white"
+      brand="Material Kit React"
+      rightLinks={<HeaderLinks />}
+      fixed
+    />
+    <GridContainer spacing={16}>
+      <GridItem xs={12}>
+        <h1>It's blog time.</h1>
+        <br />
+        All Posts:
+        <ul>
+          {posts.map(post => (
+            <li key={post.id}>
+              <Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </GridItem>
+    </GridContainer>
   </div>
 ));
