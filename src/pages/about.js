@@ -1,11 +1,12 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import { Link } from '@reach/router';
+import Button from 'components/CustomButtons/Button.jsx';
 
 export default () => (
   <div>
     <p>React Static is a progressive static site generator for React.</p>
-    <Button variant="contained" color="primary">
-      Hello World
-    </Button>
+    <Link to="/">
+      <Button color="primary">GO TOP</Button>
+    </Link>
   </div>
 );
