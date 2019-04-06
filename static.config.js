@@ -1,7 +1,19 @@
+import React from 'react';
 import axios from 'axios';
 import { createGenerateClassName } from '@material-ui/core/styles';
 const generateClassName = createGenerateClassName();
 export default {
+  Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
+    <Html lang="en-US">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" href="images/favicon.png" />
+        <title>Stacknote</title>
+      </Head>
+      <Body>{children}</Body>
+    </Html>
+  ),
   plugins: [
     [
       'react-static-plugin-jss',

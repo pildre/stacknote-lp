@@ -19,6 +19,7 @@ function App() {
           href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
           rel="stylesheet"
         />
+        <link rel="icon" type="image/png" href="assets/img/favicon.png" />
       </Head>
       <div className="content">
         <Routes />
