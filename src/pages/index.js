@@ -6,8 +6,8 @@ import classNames from 'classnames';
 import withStyles from '@material-ui/core/styles/withStyles';
 // @material-ui/icons
 import Chat from '@material-ui/icons/Chat';
-import VerifiedUser from '@material-ui/icons/VerifiedUser';
-import Fingerprint from '@material-ui/icons/Fingerprint';
+import CodeIcon from '@material-ui/icons/Code';
+import CloudUpload from '@material-ui/icons/CloudUpload';
 
 import { Link } from '@reach/router';
 import Button from 'components/CustomButtons/Button.jsx';
@@ -64,6 +64,10 @@ const indexPageStyle = {
   section: {
     padding: '20px 0'
     /*textAlign: 'center'*/
+  },
+  sectionCentered: {
+    padding: '20px 0',
+    textAlign: 'center'
   },
   description: {
     color: '#999'
@@ -206,50 +210,49 @@ class IndexPage extends React.Component {
           </div>
 
           <div className={classes.container}>
-            <div className={classes.section}>
+            <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
-                  <h2 className={classes.title}>Features</h2>
+                  <h3 className={classes.title}>Other Features</h3>
+                  {/*
                   <h5 className={classes.description}>
                     This is the paragraph where you can write more details about
                     your product. Keep you user engaged by providing meaningful
                     information. Remember that by this time, the user is
                     curious, otherwise he wouldn't scroll to get here. Add a
                     button if you want the user to see more.
-                  </h5>
+                  </h5>*/}
                 </GridItem>
               </GridContainer>
-              <div>
-                <GridContainer>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Markdown"
-                      description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                      icon={Chat}
-                      iconColor="info"
-                      vertical
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Sortable"
-                      description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                      icon={VerifiedUser}
-                      iconColor="success"
-                      vertical
-                    />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <InfoArea
-                      title="Unfurling Links"
-                      description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                      icon={Fingerprint}
-                      iconColor="danger"
-                      vertical
-                    />
-                  </GridItem>
-                </GridContainer>
-              </div>
+              <GridContainer>
+                <GridItem xs={12} sm={12} md={4}>
+                  <InfoArea
+                    title="Markdown"
+                    description="In cards, you can write in GitHub-flavored Markdown with inline code syntax highlightings."
+                    icon={Chat}
+                    iconColor="info"
+                    vertical
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                  <InfoArea
+                    title="Syntax Highlighting"
+                    description="In a markdown code block, automatically language is detected and code is highlighted."
+                    icon={CodeIcon}
+                    iconColor="danger"
+                    vertical
+                  />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={4}>
+                  <InfoArea
+                    title="Cloud Upload"
+                    description="Only for a paid user, all notes are stored at the cloud. So you can get these on multiple devices."
+                    icon={CloudUpload}
+                    iconColor="success"
+                    vertical
+                  />
+                </GridItem>
+              </GridContainer>
             </div>
           </div>
         </div>
