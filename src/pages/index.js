@@ -9,6 +9,10 @@ import Chat from '@material-ui/icons/Chat';
 import CodeIcon from '@material-ui/icons/Code';
 import CloudUpload from '@material-ui/icons/CloudUpload';
 
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+
 import { Link } from '@reach/router';
 import Button from 'components/CustomButtons/Button.jsx';
 import Header from 'components/Header/Header.jsx';
@@ -26,6 +30,9 @@ import sortCardsGif from 'assets/img/sort_cards.gif';
 import unfurlingLinksPng from 'assets/img/unfurling_links.png';
 
 import InfoArea from 'components/InfoArea/InfoArea.jsx';
+import Card from 'components/Card/Card.jsx';
+import CardBody from 'components/Card/CardBody.jsx';
+import CardHeader from 'components/Card/CardHeader.jsx';
 
 const indexPageStyle = {
   container,
@@ -71,6 +78,10 @@ const indexPageStyle = {
   },
   description: {
     color: '#999'
+  },
+  planCardTitle: {
+    fontSize: '1.5rem',
+    fontWeight: '600'
   }
 };
 
@@ -162,6 +173,7 @@ class IndexPage extends React.Component {
         <div className={classNames(classes.main)}>
           <div className={classes.container}>
             <img src={image} alt="..." />
+
             <div className={classes.section}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
@@ -178,6 +190,7 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
+
             <div className={classes.section}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
@@ -207,9 +220,7 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
-          </div>
 
-          <div className={classes.container}>
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
@@ -251,6 +262,70 @@ class IndexPage extends React.Component {
                     iconColor="success"
                     vertical
                   />
+                </GridItem>
+              </GridContainer>
+            </div>
+
+            <div className={classes.sectionCentered}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={8}>
+                  <h3 className={classes.title}>Plan</h3>
+                  {/*
+                  <h5 className={classes.description}>
+                    This is the paragraph where you can write more details about
+                    your product. Keep you user engaged by providing meaningful
+                    information. Remember that by this time, the user is
+                    curious, otherwise he wouldn't scroll to get here. Add a
+                    button if you want the user to see more.
+                  </h5>*/}
+                </GridItem>
+              </GridContainer>
+              <GridContainer>
+                <GridItem xs={12} sm={12} md={6}>
+                  <Card>
+                    <CardHeader color="info">
+                      <h4 className={classes.planCardTitle}>Free Plan</h4>
+                    </CardHeader>
+                    <CardBody>
+                      <List component="nav">
+                        <ListItem>
+                          <ListItemText primary="Unlimited Notes" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText primary="Free" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText primary="No credit card information required" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText primary="Local Storage" />
+                        </ListItem>
+                      </List>
+                    </CardBody>
+                  </Card>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={6}>
+                  <Card>
+                    <CardHeader color="warning">
+                      <h4 className={classes.planCardTitle}>Premium Plan</h4>
+                    </CardHeader>
+                    <CardBody>
+                      <List component="nav">
+                        <ListItem>
+                          <ListItemText primary="Unlimited Notes" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText primary="4.99$ (USD) / mo." />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText primary="60 Days Free Trial" />
+                        </ListItem>
+                        <ListItem>
+                          <ListItemText primary="Cloud Storage (FireStore)" />
+                        </ListItem>
+                      </List>
+                    </CardBody>
+                  </Card>
                 </GridItem>
               </GridContainer>
             </div>
