@@ -22,6 +22,8 @@ import GridItem from 'components/Grid/GridItem.jsx';
 import Parallax from 'components/Parallax/Parallax.jsx';
 import Footer from 'components/Footer/Footer.jsx';
 
+import Constants from 'lib/Constants';
+
 import { container } from 'assets/jss/material-kit-react.jsx';
 
 import image from 'assets/img/screen-shot-app-top.png';
@@ -103,13 +105,11 @@ class IndexPage extends React.Component {
       var downloadButtonIcon = '';
       if (OSName === 'MacOS') {
         downloadButtonLabel = 'Download FOR MAC';
-        downloadButtonHref =
-          'https://firebasestorage.googleapis.com/v0/b/stacknote-production.appspot.com/o/downloads%2Fmac_releases%2FStacknote-0.5.0.dmg?alt=media&token=8c560c06-84b4-4f65-b35b-048ff46d3701';
+        downloadButtonHref = Constants.app.mac.downloadLink;
         downloadButtonIcon = <i className="fab fa-apple" />;
       } else if (OSName === 'Windows') {
         downloadButtonLabel = 'Download FOR WINDOWS';
-        downloadButtonHref =
-          'https://firebasestorage.googleapis.com/v0/b/stacknote-production.appspot.com/o/downloads%2Fwindows_releases%2FStacknote-Setup-0.5.0.exe?alt=media&token=c9e32d6e-ca56-4790-b531-4bd67dd7c0a9';
+        downloadButtonHref = Constants.app.windows.downloadLink;
         downloadButtonIcon = <i className="fab fa-windows" />;
       }
 
@@ -131,7 +131,7 @@ class IndexPage extends React.Component {
       <div className={classes.bg}>
         <Header
           color="transparent"
-          brand="Stacknote"
+          brand={Constants.appName}
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
@@ -144,7 +144,7 @@ class IndexPage extends React.Component {
             <GridContainer>
               <GridItem sm={12} md={6}>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Stacknote</h1>
+                  <h1 className={classes.title}>{Constants.appName}</h1>
                   <h3 className={classes.subtitle}>
                     Stacknote is an application that can create long sentences
                     by stacking short sentences like a chat application. It

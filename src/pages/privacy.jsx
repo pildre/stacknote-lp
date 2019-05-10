@@ -6,6 +6,7 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import landingPageStyle from 'assets/jss/material-kit-react/views/landingPage.jsx';
 import marked from 'lib/marked';
 import termsMarkDown from 'lib/welcomeStacknote';
+import Constants from 'lib/Constants';
 
 import { Link } from '@reach/router';
 import Header from 'components/Header/Header.jsx';
@@ -76,7 +77,7 @@ class Privacy extends React.Component {
       <div className={classes.bg}>
         <Header
           color="white"
-          brand="Stacknote"
+          brand={Constants.appName}
           rightLinks={<HeaderLinks />}
           fixed
         />
