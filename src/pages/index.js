@@ -20,6 +20,7 @@ import HeaderLinks from 'components/Header/HeaderLinks.jsx';
 import GridContainer from 'components/Grid/GridContainer.jsx';
 import GridItem from 'components/Grid/GridItem.jsx';
 import Parallax from 'components/Parallax/Parallax.jsx';
+import Footer from 'components/Footer/Footer.jsx';
 
 import { container } from 'assets/jss/material-kit-react.jsx';
 
@@ -96,7 +97,7 @@ class IndexPage extends React.Component {
     if (navigator.appVersion.indexOf('Linux') != -1) OSName = 'Linux';
 
     var downloadButton = '';
-    if (OSName != 'Unknown') {
+    if (OSName == 'Windows' || OSName == 'MacOS') {
       var downloadButtonLabel = '';
       var downloadButtonHref = '';
       var downloadButtonIcon = '';
@@ -173,7 +174,6 @@ class IndexPage extends React.Component {
         <div className={classNames(classes.main)}>
           <div className={classes.container}>
             <img src={image} alt="..." />
-
             <div className={classes.section}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
@@ -190,7 +190,6 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
-
             <div className={classes.section}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
@@ -204,7 +203,6 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
-
             <div className={classes.section}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
@@ -220,7 +218,6 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
-
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
@@ -265,7 +262,7 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
-
+            {/* ---------- Plan ---------- */}
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
@@ -329,8 +326,25 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
+            {/* ---------- Contact ---------- */}
+            <div className={classes.sectionCentered}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={8}>
+                  <h3 className={classes.title}>Downloads</h3>
+                  {/*
+                  <h5 className={classes.description}>
+                    This is the paragraph where you can write more details about
+                    your product. Keep you user engaged by providing meaningful
+                    information. Remember that by this time, the user is
+                    curious, otherwise he wouldn't scroll to get here. Add a
+                    button if you want the user to see more.
+                  </h5>*/}
+                </GridItem>
+              </GridContainer>
+            </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }
