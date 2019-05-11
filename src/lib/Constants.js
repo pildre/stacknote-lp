@@ -21,5 +21,10 @@ export default {
       en: 'https://github.com/pildre/stacknote-forum',
       ja: 'https://github.com/pildre/stacknote-forum-ja'
     }
+  },
+  contact: {
+    email: 'info@stacknote.io',
+    twitterEn: 'https://twitter.com/stacknote_app',
+    twitterJa: 'https://twitter.com/dorokei'
   }
 };

@@ -350,7 +350,7 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
-            {/* ---------- Beta Version ---------- */}
+            {/* ---------- Forum ---------- */}
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
@@ -360,7 +360,11 @@ class IndexPage extends React.Component {
                     questions or requests using the app, please contact us on
                     the forum. Please create an issue on the Github page below.
                     (日本語版フォーラムは
-                    <a href={Constants.forum.urls.ja} className={classes.block}>
+                    <a
+                      href={Constants.forum.urls.ja}
+                      className={classes.block}
+                      target="_blank"
+                    >
                       こちら
                     </a>
                     )
@@ -387,9 +391,69 @@ class IndexPage extends React.Component {
                   <h3 className={classes.title}>Contact</h3>
                   <h5 className={classes.description}>
                     For requests and bug reports, please create an issue on the
-                    Github page above. The creator's Twitter account is here.
-                    The Japanese version is here.
+                    Github page above. The creator's Twitter account is
+                    <a
+                      href={Constants.contact.twitterEn}
+                      className={classes.block}
+                      target="_blank"
+                    >
+                      {' here'}
+                    </a>
+                    . If you have a problem related to your account, please send
+                    an
+                    <a
+                      href={'mailto:' + Constants.contact.email}
+                      className={classes.block}
+                      target="_blank"
+                    >
+                      {' email'}
+                    </a>
+                    .
                   </h5>
+                </GridItem>
+              </GridContainer>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={3}>
+                  <Button
+                    color="github"
+                    size="lg"
+                    href={Constants.forum.urls.en}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className={classes.socialIcons + ' ' + 'fab fa-github'}
+                    />
+                    USER FORUM
+                  </Button>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={3}>
+                  <Button
+                    color="twitter"
+                    size="lg"
+                    href={Constants.forum.urls.en}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className={classes.socialIcons + ' ' + 'fab fa-twitter'}
+                    />
+                    TWITTER
+                  </Button>
+                </GridItem>
+                <GridItem xs={12} sm={12} md={3}>
+                  <Button
+                    color="white"
+                    size="lg"
+                    href={Constants.forum.urls.en}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className={classes.socialIcons + ' ' + 'fa fa-envelope'}
+                    />
+                    {' EMAIL'}
+                  </Button>
                 </GridItem>
               </GridContainer>
             </div>

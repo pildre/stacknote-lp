@@ -9,6 +9,8 @@ import { List, ListItem, withStyles } from '@material-ui/core';
 // @material-ui/icons
 import Favorite from '@material-ui/icons/Favorite';
 
+import Constants from 'lib/Constants';
+
 import footerStyle from 'assets/jss/material-kit-react/components/footerStyle.jsx';
 
 function Footer({ ...props }) {
@@ -51,7 +53,7 @@ function Footer({ ...props }) {
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()}&nbsp;
           <a
-            href="https://twitter.com/stacknote_app"
+            href={Constants.contact.twitterEn}
             className={aClasses}
             target="_blank"
           >
