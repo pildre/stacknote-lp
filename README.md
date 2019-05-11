@@ -7,6 +7,8 @@
 - [Cutter Github (Taking Siteinfo API)](https://github.com/pildre/cutter)
 - [Stripe function Github](https://github.com/pildre/stacknote-stripe-function)
 - [Stacknote LP Github](https://github.com/pildre/stacknote-lp)
+- [User Forum](https://github.com/pildre/stacknote-forum)
+- [User Forum for Japanese](https://github.com/pildre/stacknote-forum-ja)
 
 ## Third party library
 
