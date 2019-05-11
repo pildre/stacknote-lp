@@ -42,6 +42,7 @@ function Footer({ ...props }) {
                 className={classes.block}
                 target="_blank"
               >
+                <i className={classes.socialIcons + ' fab fa-twitter'} />
                 Twitter
               </a>
             </ListItem>

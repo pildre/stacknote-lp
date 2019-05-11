@@ -159,7 +159,7 @@ class IndexPage extends React.Component {
                     <Button
                       color="info"
                       size="lg"
-                      href="https://stacknote.io"
+                      href={Constants.app.web.url}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -326,19 +326,70 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
-            {/* ---------- Contact ---------- */}
+            {/* ---------- Downloads ---------- */}
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
                   <h3 className={classes.title}>Downloads</h3>
-                  {/*
+                  <GridContainer>
+                    <GridItem sm={12} md={6}>
+                      {downloadButton}
+                    </GridItem>
+                    <GridItem sm={12} md={6}>
+                      <Button
+                        color="info"
+                        size="lg"
+                        href="https://stacknote.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        ACCESS STACKNOTE IN BROWSER
+                      </Button>
+                    </GridItem>
+                  </GridContainer>
+                </GridItem>
+              </GridContainer>
+            </div>
+            {/* ---------- Beta Version ---------- */}
+            <div className={classes.sectionCentered}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={8}>
+                  <h3 className={classes.title}>Forum</h3>
                   <h5 className={classes.description}>
-                    This is the paragraph where you can write more details about
-                    your product. Keep you user engaged by providing meaningful
-                    information. Remember that by this time, the user is
-                    curious, otherwise he wouldn't scroll to get here. Add a
-                    button if you want the user to see more.
-                  </h5>*/}
+                    This is a beta version. So I need your help. If you have any
+                    questions or requests using the app, please contact us on
+                    the forum. Please create an issue on the Github page below.
+                    (日本語版フォーラムは
+                    <a href={Constants.forum.urls.ja} className={classes.block}>
+                      こちら
+                    </a>
+                    )
+                  </h5>
+                  <Button
+                    color="github"
+                    size="lg"
+                    href={Constants.forum.urls.en}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i
+                      className={classes.socialIcons + ' ' + 'fab fa-github'}
+                    />
+                    USER FORUM
+                  </Button>
+                </GridItem>
+              </GridContainer>
+            </div>
+            {/* ---------- Contact ---------- */}
+            <div className={classes.sectionCentered}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={8}>
+                  <h3 className={classes.title}>Contact</h3>
+                  <h5 className={classes.description}>
+                    For requests and bug reports, please create an issue on the
+                    Github page above. The creator's Twitter account is here.
+                    The Japanese version is here.
+                  </h5>
                 </GridItem>
               </GridContainer>
             </div>
