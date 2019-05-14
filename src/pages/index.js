@@ -1,19 +1,25 @@
 import React from 'react';
 
-// nodejs library that concatenates classes
 import classNames from 'classnames';
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
-// @material-ui/icons
+
+import Constants from 'lib/Constants';
+
+// Icons and images
 import Chat from '@material-ui/icons/Chat';
 import CodeIcon from '@material-ui/icons/Code';
 import CloudUpload from '@material-ui/icons/CloudUpload';
+import image from 'assets/img/screen-shot-app-top.png';
+import stackCardGif from 'assets/img/stack_cards.gif';
+import imagesStyle from 'assets/jss/material-kit-react/imagesStyles.jsx';
+import sortCardsGif from 'assets/img/sort_cards.gif';
+import unfurlingLinksPng from 'assets/img/unfurling_links.png';
 
+import { container } from 'assets/jss/material-kit-react.jsx';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import { Link } from '@reach/router';
 import Button from 'components/CustomButtons/Button.jsx';
 import Header from 'components/Header/Header.jsx';
 import HeaderLinks from 'components/Header/HeaderLinks.jsx';
@@ -21,17 +27,6 @@ import GridContainer from 'components/Grid/GridContainer.jsx';
 import GridItem from 'components/Grid/GridItem.jsx';
 import Parallax from 'components/Parallax/Parallax.jsx';
 import Footer from 'components/Footer/Footer.jsx';
-
-import Constants from 'lib/Constants';
-
-import { container } from 'assets/jss/material-kit-react.jsx';
-
-import image from 'assets/img/screen-shot-app-top.png';
-import stackCardGif from 'assets/img/stack_cards.gif';
-import imagesStyle from 'assets/jss/material-kit-react/imagesStyles.jsx';
-import sortCardsGif from 'assets/img/sort_cards.gif';
-import unfurlingLinksPng from 'assets/img/unfurling_links.png';
-
 import InfoArea from 'components/InfoArea/InfoArea.jsx';
 import Card from 'components/Card/Card.jsx';
 import CardBody from 'components/Card/CardBody.jsx';
@@ -64,8 +59,8 @@ const indexPageStyle = {
   },
   main: {
     background: '#FFFFFF',
-    position: 'relative'
-    /*padding: '100px 30px 30px'*/
+    position: 'relative',
+    paddingBottom: '40px'
   },
   bg: {
     background: '#FFFFFF',
@@ -120,6 +115,7 @@ class IndexPage extends React.Component {
           href={downloadButtonHref}
           target="_blank"
           rel="noopener noreferrer"
+          fullWidth
         >
           {downloadButtonIcon}
           {downloadButtonLabel}
@@ -177,7 +173,9 @@ class IndexPage extends React.Component {
             <div className={classes.section}>
               <GridContainer>
                 <GridItem xs={12} sm={12} md={6}>
-                  <h2 className={classes.sectionTitle}>Stack Cards</h2>
+                  <h2 id="features" className={classes.sectionTitle}>
+                    Stack Cards
+                  </h2>
                   <h5 className={classes.description}>
                     In Stacknote, you can stack blocks and build a document.
                     That's just like a chat app's UI. That's blocks are called
@@ -266,7 +264,9 @@ class IndexPage extends React.Component {
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
-                  <h3 className={classes.title}>Plan</h3>
+                  <h3 id="plan" className={classes.title}>
+                    Plan
+                  </h3>
                   {/*
                   <h5 className={classes.description}>
                     This is the paragraph where you can write more details about
@@ -330,7 +330,9 @@ class IndexPage extends React.Component {
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
-                  <h3 className={classes.title}>Downloads</h3>
+                  <h3 id="download" className={classes.title}>
+                    Download
+                  </h3>
                   <GridContainer>
                     <GridItem sm={12} md={6}>
                       {downloadButton}
@@ -342,6 +344,7 @@ class IndexPage extends React.Component {
                         href="https://stacknote.io"
                         target="_blank"
                         rel="noopener noreferrer"
+                        fullWidth
                       >
                         ACCESS STACKNOTE IN BROWSER
                       </Button>
@@ -375,11 +378,12 @@ class IndexPage extends React.Component {
                     href={Constants.forum.urls.en}
                     target="_blank"
                     rel="noopener noreferrer"
+                    justIcon
+                    round
                   >
                     <i
                       className={classes.socialIcons + ' ' + 'fab fa-github'}
                     />
-                    USER FORUM
                   </Button>
                 </GridItem>
               </GridContainer>
@@ -388,7 +392,9 @@ class IndexPage extends React.Component {
             <div className={classes.sectionCentered}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
-                  <h3 className={classes.title}>Contact</h3>
+                  <h3 id="contact" className={classes.title}>
+                    Contact
+                  </h3>
                   <h5 className={classes.description}>
                     For requests and bug reports, please create an issue on the
                     Github page above. The creator's Twitter account is
@@ -420,6 +426,7 @@ class IndexPage extends React.Component {
                     href={Constants.forum.urls.en}
                     target="_blank"
                     rel="noopener noreferrer"
+                    fullWidth
                   >
                     <i
                       className={classes.socialIcons + ' ' + 'fab fa-github'}
@@ -434,6 +441,7 @@ class IndexPage extends React.Component {
                     href={Constants.forum.urls.en}
                     target="_blank"
                     rel="noopener noreferrer"
+                    fullWidth
                   >
                     <i
                       className={classes.socialIcons + ' ' + 'fab fa-twitter'}
@@ -448,6 +456,7 @@ class IndexPage extends React.Component {
                     href={Constants.forum.urls.en}
                     target="_blank"
                     rel="noopener noreferrer"
+                    fullWidth
                   >
                     <i
                       className={classes.socialIcons + ' ' + 'fa fa-envelope'}
