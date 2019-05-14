@@ -35,13 +35,13 @@ class BlogPage extends React.Component {
                     <br />
                     All Posts:
                     <ul>
-                      {posts.map(post => (
+                      {/*posts.map(post => (
                         <li key={post.id}>
                           <Link to={`/blog/post/${post.id}/`}>
                             {post.title}
                           </Link>
                         </li>
-                      ))}
+                      ))*/}
                     </ul>
                   </GridItem>
                 </GridContainer>
