@@ -15,7 +15,7 @@ import Footer from 'components/Footer/Footer.jsx';
 
 import { container } from 'assets/jss/material-kit-react.jsx';
 import imagesStyle from 'assets/jss/material-kit-react/imagesStyles.jsx';
-const indexPageStyle = {
+const privacyPageStyle = {
   container,
   brand: {
     color: '#FFFFFF',
@@ -42,8 +42,8 @@ const indexPageStyle = {
   },
   main: {
     background: '#FFFFFF',
-    position: 'relative'
-    /*padding: '100px 30px 30px'*/
+    position: 'relative',
+    paddingBottom: '40px'
   },
   bg: {
     background: '#FFFFFF',
@@ -95,4 +95,4 @@ class Privacy extends React.Component {
   }
 }
 
-export default withStyles(indexPageStyle)(Privacy);
+export default withStyles(privacyPageStyle)(Privacy);

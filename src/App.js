@@ -1,6 +1,5 @@
 import React from 'react';
 import { Head, Root, Routes } from 'react-static';
-import { Link } from '@reach/router';
 import JssProvider from 'react-jss/lib/JssProvider';
 
 import './app.scss';

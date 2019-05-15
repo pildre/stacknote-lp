@@ -1,9 +1,6 @@
 import React from 'react';
-// nodejs library that concatenates classes
 import classNames from 'classnames';
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
-import landingPageStyle from 'assets/jss/material-kit-react/views/landingPage.jsx';
 import marked from 'lib/marked';
 import termsMarkDown from 'lib/welcomeStacknote';
 import Constants from 'lib/Constants';
@@ -15,7 +12,7 @@ import Footer from 'components/Footer/Footer.jsx';
 
 import { container } from 'assets/jss/material-kit-react.jsx';
 import imagesStyle from 'assets/jss/material-kit-react/imagesStyles.jsx';
-const indexPageStyle = {
+const termsPageStyle = {
   container,
   brand: {
     color: '#FFFFFF',
@@ -42,8 +39,8 @@ const indexPageStyle = {
   },
   main: {
     background: '#FFFFFF',
-    position: 'relative'
-    /*padding: '100px 30px 30px'*/
+    position: 'relative',
+    paddingBottom: '40px'
   },
   bg: {
     background: '#FFFFFF',
@@ -95,4 +92,4 @@ class Terms extends React.Component {
   }
 }
 
-export default withStyles(indexPageStyle)(Terms);
+export default withStyles(termsPageStyle)(Terms);
