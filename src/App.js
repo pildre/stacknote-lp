@@ -2,20 +2,14 @@ import React from 'react';
 import { Head, Root, Routes } from 'react-static';
 import { Link } from '@reach/router';
 import JssProvider from 'react-jss/lib/JssProvider';
-import { createGenerateClassName } from '@material-ui/core/styles';
 
 import './app.scss';
 
 const dashboardRoutes = [];
 
-const generateClassName = createGenerateClassName({
-  dangerouslyUseGlobalCSS: true,
-  productionPrefix: 'c'
-});
-
 function App() {
   return (
-    <JssProvider generateClassName={generateClassName}>
+    <JssProvider>
       <Root>
         <Head>
           <link
