@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import fs from 'fs';
 export default {
   siteRoot: 'https://stacknote-lp.netlify.com',
 
@@ -25,10 +26,18 @@ export default {
   ),
   plugins: [['react-static-plugin-sass']],
   getSiteData: () => ({
-    title: 'React Static'
+    title: 'Stacknote'
   }),
   getRoutes: async () => {
-    return [];
+    var markdownText = fs.readFileSync('src/lib/terms.md', 'utf-8');
+    return [
+      {
+        path: '/terms',
+        getData: () => ({
+          markdownText
+        })
+      }
+    ];
     // const { data: posts } = await axios.get(
     //   'https://jsonplaceholder.typicode.com/posts'
     // );

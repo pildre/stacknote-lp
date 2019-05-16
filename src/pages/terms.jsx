@@ -1,8 +1,8 @@
 import React from 'react';
+import { RouteData } from 'react-static';
 import classNames from 'classnames';
 import withStyles from '@material-ui/core/styles/withStyles';
 import marked from 'lib/marked';
-import termsMarkDown from 'lib/welcomeStacknote';
 import Constants from 'lib/Constants';
 
 import { Link } from '@reach/router';
@@ -66,28 +66,28 @@ const termsPageStyle = {
 class Terms extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
-    var text = '';
-    termsMarkDown.forEach(function(element) {
-      text += '\n\n' + element.textMarked;
-    });
     return (
-      <div className={classes.bg}>
-        <Header
-          color="white"
-          brand={Constants.appName}
-          rightLinks={<HeaderLinks />}
-          fixed
-        />
-        <div className={classNames(classes.main)}>
-          <div className={classes.container}>
-            <p
-              className="markdown-body"
-              dangerouslySetInnerHTML={{ __html: marked(text) }}
+      <RouteData>
+        {({ markdownText }) => (
+          <div className={classes.bg}>
+            <Header
+              color="white"
+              brand={Constants.appName}
+              rightLinks={<HeaderLinks />}
+              fixed
             />
+            <div className={classNames(classes.main)}>
+              <div className={classes.container}>
+                <p
+                  className="markdown-body"
+                  dangerouslySetInnerHTML={{ __html: marked(markdownText) }}
+                />
+              </div>
+            </div>
+            <Footer />
           </div>
-        </div>
-        <Footer />
-      </div>
+        )}
+      </RouteData>
     );
   }
 }
