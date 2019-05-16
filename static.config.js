@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
-import { createGenerateClassName } from '@material-ui/core/styles';
-const generateClassName = createGenerateClassName();
 export default {
   siteRoot: 'https://stacknote-lp.netlify.com',
+
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
     <Html lang="en-US">
       <Head>
@@ -24,17 +23,7 @@ export default {
       <Body>{children}</Body>
     </Html>
   ),
-  plugins: [
-    [
-      'react-static-plugin-jss',
-      {
-        providerProps: {
-          generateClassName
-        }
-      }
-    ],
-    ['react-static-plugin-sass']
-  ],
+  plugins: [['react-static-plugin-sass']],
   getSiteData: () => ({
     title: 'React Static'
   }),
