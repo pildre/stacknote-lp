@@ -29,12 +29,19 @@ export default {
     title: 'Stacknote'
   }),
   getRoutes: async () => {
-    var markdownText = fs.readFileSync('src/lib/terms.md', 'utf-8');
+    var markdownTerm = fs.readFileSync('src/lib/terms.md', 'utf-8');
+    var markdownPrivacy = fs.readFileSync('src/lib/privacy.md', 'utf-8');
     return [
       {
         path: '/terms',
         getData: () => ({
-          markdownText
+          markdownText: markdownTerm
+        })
+      },
+      {
+        path: '/privacy',
+        getData: () => ({
+          markdownText: markdownPrivacy
         })
       }
     ];

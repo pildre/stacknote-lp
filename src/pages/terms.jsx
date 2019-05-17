@@ -40,6 +40,7 @@ const termsPageStyle = {
   main: {
     background: '#FFFFFF',
     position: 'relative',
+    paddingTop: '110px',
     paddingBottom: '40px'
   },
   bg: {
@@ -66,8 +67,6 @@ const termsPageStyle = {
 class Terms extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
-    console.log('#render in Terms was called!');
-    console.log(this.props);
     return (
       <RouteData>
         {({ markdownText }) => (

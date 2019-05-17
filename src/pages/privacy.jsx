@@ -1,11 +1,8 @@
 import React from 'react';
-// nodejs library that concatenates classes
+import { RouteData } from 'react-static';
 import classNames from 'classnames';
-// @material-ui/core components
 import withStyles from '@material-ui/core/styles/withStyles';
-import landingPageStyle from 'assets/jss/material-kit-react/views/landingPage.jsx';
 import marked from 'lib/marked';
-import termsMarkDown from 'lib/welcomeStacknote';
 import Constants from 'lib/Constants';
 
 import { Link } from '@reach/router';
@@ -43,7 +40,7 @@ const privacyPageStyle = {
   main: {
     background: '#FFFFFF',
     position: 'relative',
-    paddingTop: '100px',
+    paddingTop: '110px',
     paddingBottom: '40px'
   },
   bg: {
@@ -70,33 +67,28 @@ const privacyPageStyle = {
 class Privacy extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
-    var text = '';
-    termsMarkDown.forEach(function(element) {
-      text += '\n\n' + element.textMarked;
-    });
-
-    console.log('#render in Privacy was called!');
-    console.log(termsMarkDown);
-    console.log(text);
-
     return (
-      <div className={classes.bg}>
-        <Header
-          color="white"
-          brand={Constants.appName}
-          rightLinks={<HeaderLinks />}
-          fixed
-        />
-        <div className={classNames(classes.main)}>
-          <div className={classes.container}>
-            <div
-              className="markdown-body"
-              dangerouslySetInnerHTML={{ __html: marked(text) }}
+      <RouteData>
+        {({ markdownText }) => (
+          <div className={classes.bg}>
+            <Header
+              color="white"
+              brand={Constants.appName}
+              rightLinks={<HeaderLinks />}
+              fixed
             />
+            <div className={classNames(classes.main)}>
+              <div className={classes.container}>
+                <div
+                  className="markdown-body"
+                  dangerouslySetInnerHTML={{ __html: marked(markdownText) }}
+                />
+              </div>
+            </div>
+            <Footer />
           </div>
-        </div>
-        <Footer />
-      </div>
+        )}
+      </RouteData>
     );
   }
 }
