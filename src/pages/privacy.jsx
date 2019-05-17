@@ -73,6 +73,11 @@ class Privacy extends React.Component {
     termsMarkDown.forEach(function(element) {
       text += '\n\n' + element.textMarked;
     });
+
+    console.log('#render in Privacy was called!');
+    console.log(termsMarkDown);
+    console.log(text);
+
     return (
       <div className={classes.bg}>
         <Header

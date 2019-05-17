@@ -66,6 +66,8 @@ const termsPageStyle = {
 class Terms extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
+    console.log('#render in Terms was called!');
+    console.log(this.props);
     return (
       <RouteData>
         {({ markdownText }) => (
