@@ -43,6 +43,7 @@ const privacyPageStyle = {
   main: {
     background: '#FFFFFF',
     position: 'relative',
+    paddingTop: '100px',
     paddingBottom: '40px'
   },
   bg: {
