@@ -90,7 +90,15 @@ class Privacy extends React.Component {
           <div className={classes.container}>
             <p
               className="markdown-body"
+              dangerouslySetInnerHTML={{ __html: marked(text) }}
+            />
+            <p
+              className="markdown-body"
               dangerouslySetInnerHTML={{ __html: 'test<br>test<br>test' }}
+            />
+            <p
+              className="markdown-body"
+              dangerouslySetInnerHTML={{ __html: 'test' }}
             />
             <p>{text}</p>
             <p>{marked(text)}</p>
