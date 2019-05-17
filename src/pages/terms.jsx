@@ -80,7 +80,7 @@ class Terms extends React.Component {
             />
             <div className={classNames(classes.main)}>
               <div className={classes.container}>
-                <p
+                <div
                   className="markdown-body"
                   dangerouslySetInnerHTML={{ __html: marked(markdownText) }}
                 />
