@@ -3,7 +3,7 @@ import axios from 'axios';
 import fs from 'fs';
 export default {
   siteRoot: 'https://stacknote-lp.netlify.com',
-
+  stagingSiteRoot: 'http://localhost:3000',
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
     <Html lang="en-US">
       <Head>
