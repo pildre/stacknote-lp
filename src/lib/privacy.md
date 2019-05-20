@@ -1,140 +1,41 @@
-This is a quick reference. For more detail, see [John Gruber's original documents](https://daringfireball.net/projects/markdown/) or [the Github-flavored Markdown](https://help.github.com/categories/writing-on-github/).
+# Privacy Policy for Pildre, Inc.
 
-> ### [GitHub Help](https://help.github.com/categories/writing-on-github/.)
->
-> ![]()
+At Stacknote, accessible from https://stacknote.io, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Stacknote and how we use it.
 
-> ### [Daring Fireball: Markdown](https://daringfireball.net/projects/markdown/)
->
-> ![]()
+If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at info@stacknote.io
 
-## Headings
+## Log Files
 
-To create a heading, add one to six \# symbols before your heading text.
+Stacknote follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
 
-```
-# The largest heading
-## The second largest heading
-###### The smallest heading
-```
+## Cookies and Web Beacons
 
-show as below:
+Like any other website, Stacknote uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
 
-> # The largest heading
->
-> ## The second largest heading
->
-> ###### The smallest heading
+## Privacy Policies
 
-## Styling text
+You may consult this list to find the Privacy Policy for each of the advertising partners of Stacknote. Our Privacy Policy was created with the help of the [Privacy Policy Generator](https://www.privacypolicygenerator.info/).
 
-You can indicate emphasis with bold, italic, or strikethrough text.
+Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Stacknote, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
 
-```
-*This text is italicized*
-_This text is italicized too_
-**This is bold text**
-__This is bold text too__
-~~This was mistaken text~~
-```
+Note that Stacknote has no access to or control over these cookies that are used by third-party advertisers.
 
-> _This text is italicized_ > _This text is italicized too_ > **This is bold text** > **This is bold text too**
-> ~~This was mistaken text~~
+## Third Party Privacy Policies
 
-## Quoting text
+Stacknote's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.
 
-You can quote text with a \>.
+You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites. What Are Cookies?
 
-```
-> You can quote text with a >.
+## Children's Information
 
-> > This is a nested quoting text.
-```
+Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
 
-This text is show as below.
+Stacknote does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
 
-> You can quote text with a >.
+## Online Privacy Policy Only
 
-> > This is a nested quoting text.
+This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Stacknote. This policy is not applicable to any information collected offline or via channels other than this website.
 
-## Quoting code
+## Consent
 
-### Inline code
-
-You can call out code or a command within a sentence with single backticks.
-
-```
-Inline `code` has `back-ticks around` it.
-```
-
-> Inline `code` has `back-ticks around` it.
-
-### Blocks of code
-
-To format code or text into its own distinct block, use triple backticks.
-
-> Some basic Git commands are:
-> \```
-> git status
-> git add
-> git commit
-> \```
-
-> Some basic Git commands are:
->
-> ```
-> git status
-> git add
-> git commit
-> ```
-
-## Links
-
-You can create an inline link by wrapping link text in brackets [ ], and then wrapping the URL in parentheses ( ).
-
-```
-This site was built using [GitHub Pages](https://pages.github.com/).
-```
-
-> This site was built using [GitHub Pages](https://pages.github.com/).
-
-## Images
-
-```
-Inline-style: ![alt text](/images/logo_transparent_300.png "Placeholder Image")
-```
-
-> Inline-style: ![alt text](/images/logo_transparent_300.png 'Placeholder Image')
-
-## Lists
-
-You can make an unordered list by preceding one or more lines of text with - or \*.
-
-```
-- George Washington
-- John Adams
-- Thomas Jefferson
-```
-
-> - George Washington
-> - John Adams
-> - Thomas Jefferson
-
-### Tables
-
-You can create tables with pipes | and hyphens -.
-
-```
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-```
-
-| Left-aligned | Center-aligned | Right-aligned |
-| :----------- | :------------: | ------------: |
-| git status   |   git status   |    git status |
-| git diff     |    git diff    |      git diff |
-
-You can align text to the left, right, or center of a column by including colons : to the left, right, or on both sides of the hyphens within the header row.
-
+By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.
