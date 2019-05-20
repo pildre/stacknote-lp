@@ -29,8 +29,9 @@ export default {
     title: 'Stacknote'
   }),
   getRoutes: async () => {
-    var markdownTerm = fs.readFileSync('src/lib/terms.md', 'utf-8');
-    var markdownPrivacy = fs.readFileSync('src/lib/privacy.md', 'utf-8');
+    const markdownTerm = fs.readFileSync('src/lib/terms.md', 'utf-8');
+    const markdownPrivacy = fs.readFileSync('src/lib/privacy.md', 'utf-8');
+    const markdownNotation = fs.readFileSync('src/lib/notation.md', 'utf-8');
     return [
       {
         path: '/terms',
@@ -42,6 +43,12 @@ export default {
         path: '/privacy',
         getData: () => ({
           markdownText: markdownPrivacy
+        })
+      },
+      {
+        path: '/notation',
+        getData: () => ({
+          markdownText: markdownNotation
         })
       }
     ];

@@ -63,3 +63,7 @@ Violation of any of the terms below will result in the termination of your Accou
 2. We claim no intellectual property rights over the material you provide to the Service. All materials uploaded remain yours.
 3. We do not pre-screen content but reserves the right (but not the obligation) in their sole discretion to refuse or remove any content that is available via the Service.
 4. The look and feel of the Service are copyright©Pildre Inc. All rights reserved. You may not duplicate, copy, or reuse any portion of the HTML, CSS, JavaScript, or visual design elements without express written permission from the Company.
+
+## Notation based on the Specified Commercial Transaction Act
+
+[特定商取引法に基づく表記](https://lp.stacknote.io/notation/)
