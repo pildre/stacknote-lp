@@ -49,7 +49,7 @@ Violation of any of the terms below will result in the termination of your Accou
 2. All of your content will be immediately be inaccessible from the Service upon cancellation. This information can not be recovered once it has been permanently deleted.
 3. If you cancel the Service before the end of your current paid up month, your cancellation will take effect immediately, and you will not be charged again.
 4. We, in its sole discretion, have the right to suspend or terminate your account and refuse any and all current or future use of the Service for any reason at any time. Such termination of the Service will result in the deactivation or deletion of your Account or your access to your Account, and the forfeiture and relinquishment of all content in your account. We reserve the right to refuse service to anyone for any reason at any time.
-5. Account termination request should be sent to info@stacknote.io
+5. Account termination request should be sent to [info@stacknote.io](mailto:info@stacknote.io).
 
 ## Modifications to the Service and Prices
 
