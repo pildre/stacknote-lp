@@ -1,14 +1,14 @@
 # Terms of Service
 
-These Terms of Service ("Terms") govern your access to and use of the services, including our various websites, APIs, email notifications, and applications (the "Services" or "stacknote"), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Services (collectively referred to as "Content"). stacknote is owned by Pildre Inc., Tokyo - Japan. (referred to as "Our" or "We"). As a customer of this service, you're a "User" or "You" according to this agreement. Your access to and use of the Services are conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services you agree to be bound by these Terms.
+These Terms of Service ("Terms") govern your access to and use of the services, including our various websites, APIs, email notifications, and applications (the "Services" or "Stacknote"), and any information, text, graphics, photos or other materials uploaded, downloaded or appearing on the Services (collectively referred to as "Content"). Stacknote is owned by Pildre Inc., Tokyo - Japan. (referred to as "Our" or "We"). As a customer of this service, you're a "User" or "You" according to this agreement. Your access to and use of the Services are conditioned on your acceptance of and compliance with these Terms. By accessing or using the Services you agree to be bound by these Terms.
 
-We reserve the right to update and change these Terms of Service without notice. Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms of Service at any time at stacknote.io /terms
+We reserve the right to update and change these Terms of Service without notice. Any new features that augment or enhance the current Service, including the release of new tools and resources, shall be subject to the Terms of Service. Continued use of the Service after any such changes shall constitute your consent to such changes. You can review the most current version of the Terms of Service at any time at [https://lp.stacknote.io/terms](https://lp.stacknote.io/terms).
 
-Violation of any of the terms below will result in the termination of your Account. While stacknote prohibits such conduct and Content on the Service, you understand and agree that stacknote cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk.
+Violation of any of the terms below will result in the termination of your Account. While Stacknote prohibits such conduct and Content on the Service, you understand and agree that Stacknote cannot be responsible for the Content posted on the Service and you nonetheless may be exposed to such materials. You agree to use the Service at your own risk.
 
 ## General Terms
 
-1. You agree to use the Service at your own risk and discretion. That means they don’t come with any warranty. None expressed, none implied.
+1. You agree to use the service at your own risk and discretion. That means they don’t come with any warranty. None expressed, none implied.
 2. The Services should not be used to store sensitive information such as bank account numbers, credit card information, or passwords.
 3. We are not responsible for any information stored with the Service.
 4. When you violate any of the terms below, we will terminate your account and the Content will not be stored any after.
@@ -18,21 +18,21 @@ Violation of any of the terms below will result in the termination of your Accou
 8. We won’t be liable to you for any damages that arise from your using the Services. This includes if the Services are hacked or unavailable. This includes all types of damages (indirect, incidental, consequential, special or exemplary). And it includes all kinds of legal claims, such as breach of contract, breach of warranty, tort, or any other loss.
 9. Reasonable efforts are taken to improve the accuracy and integrity of the Pocket Technologies, but we are not responsible for mistakes, out-of-date information, inaccuracies, typographical or other errors.
 10. We do not warrant, and will not have any liability or responsibility for, your use of Pocket or the products or services we provide.
-11. Questions about the Terms of Service should be sent to xxxx@stacknote.io
+11. Questions about the Terms of Service should be sent to [info@stacknote.io](mailto:info@stacknote.io).
 
 ## Account Registration and Passwords
 
-1. You may be required to create an account with stacknote in order to access certain Services. It is a condition of your use of the Services that all the information you provide on the Services is correct, current and complete.
+1. You may be required to create an account with Stacknote in order to access certain Services. It is a condition of your use of the Services that all the information you provide on the Services is correct, current and complete.
 2. We reserve the right to disable any user account, at any time in our sole discretion for any or no reason, including if you violate any of the terms.
 3. You are responsible for keeping your password safe that you use for login to your account.
-4. We cannot and will not be liable for any loss or damage arising from your failure of above. You agree to notify us immediately at contact@stacknote.io of any actual or suspected unauthorized use of your account or any other breach of security known by you.
+4. We cannot and will not be liable for any loss or damage arising from your failure of above. You agree to notify us immediately at [info@stacknote.io](mailto:info@stacknote.io) of any actual or suspected unauthorized use of your account or any other breach of security known by you.
 5. Your login may only be used by one person. A single login credential to be shared by multiple people is not permitted.
 6. You may not use the Service for any illegal purpose or to violate any laws in your jurisdiction (including but not limited to copyright laws).
 
 ## Privacy
 
-1. Any information that you provide to Inkdrop is subject to our Privacy Policy, which governs our collection and use of your information. You understand that through your use of the Services you consent to the collection and use (as set forth in the Privacy Policy) of this information, including the transfer of this information to Japan and/or other countries for storage, processing and use by Inkdrop.
-2. As part of providing you the Services, we may need to provide you with certain communications, such as service announcements and administrative messages. These communications are considered part of the Services and your Inkdrop account, which you may not be able to opt-out from receiving.
+1. Any information that you provide to Stacknote is subject to our [Privacy Policy](https://lp.stacknote.io/privacy), which governs our collection and use of your information. You understand that through your use of the Services you consent to the collection and use (as set forth in the Privacy Policy) of this information, including the transfer of this information to Japan and/or other countries for storage, processing and use by Stacknote.
+2. As part of providing you the Services, we may need to provide you with certain communications, such as service announcements and administrative messages. These communications are considered part of the Services and your Stacknote account, which you may not be able to opt-out from receiving.
 
 ## Payment and Refunds Terms
 
@@ -45,7 +45,7 @@ Violation of any of the terms below will result in the termination of your Accou
 
 ## Cancellation and Termination
 
-1. You are solely responsible for properly canceling your account. An email or phone request to cancel your account is not considered cancellation. You can cancel your account at any time by visiting your account page on my.inkdrop.app.
+1. You are solely responsible for properly canceling your account. An email or phone request to cancel your account is not considered cancellation. You can cancel your account at any time by visiting your subscription information page.
 2. All of your content will be immediately be inaccessible from the Service upon cancellation. This information can not be recovered once it has been permanently deleted.
 3. If you cancel the Service before the end of your current paid up month, your cancellation will take effect immediately, and you will not be charged again.
 4. We, in its sole discretion, have the right to suspend or terminate your account and refuse any and all current or future use of the Service for any reason at any time. Such termination of the Service will result in the deactivation or deletion of your Account or your access to your Account, and the forfeiture and relinquishment of all content in your account. We reserve the right to refuse service to anyone for any reason at any time.
@@ -54,7 +54,7 @@ Violation of any of the terms below will result in the termination of your Accou
 ## Modifications to the Service and Prices
 
 1. We reserve the right to modify or discontinue, temporarily or permanently, any part of the Service with or without notice at any time.
-2. Prices of all Services are subject to change upon 30 days notice from us. Such notice may be provided at any time by posting the changes to the Inkdrop site or the Service itself.
+2. Prices of all Services are subject to change upon 30 days notice from us. Such notice may be provided at any time by posting the changes to the Stacknote site or the Service itself.
 3. We shall not be liable to you or to any third party for any modification, price change, suspension or discontinuance of the Service.
 
 ## Copyright and Content Ownership

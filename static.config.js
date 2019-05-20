@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import fs from 'fs';
 export default {
-  siteRoot: 'https://stacknote-lp.netlify.com',
+  siteRoot: 'https://lp.stacknote.io',
   stagingSiteRoot: 'http://localhost:3000',
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
     <Html lang="en-US">
