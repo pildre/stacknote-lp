@@ -7,7 +7,14 @@ export default {
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
     <Html lang="en-US">
       <Head>
-        <meta charSet="UTF-8" />
+        <meta charset="utf-8" />
+        <title>Stacknote</title>
+        <meta
+          name="description"
+          content="Stacknote is an application that can create long sentences by stacking short sentences like a chat application. It makes your writing surprisingly efficient."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Keita Ono" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/images/favicon.png" />
         <link
@@ -19,7 +26,12 @@ export default {
           href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
           rel="stylesheet"
         />
-        <title>Stacknote</title>
+        <meta property="og:type" content="product" />
+        <meta property="og:title" content="Stacknote" />
+        <meta property="og:url" content="https://lp.stacknote.io/" />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <meta property="product:price:amount" content="4.99" />
+        <meta property="product:price:currency" content="USD" />
       </Head>
       <Body>{children}</Body>
     </Html>
