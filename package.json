@@ -13,10 +13,12 @@
     "@material-ui/core": "^3.8.1",
     "@material-ui/icons": "^3.0.1",
     "@reach/router": "^1.2.1",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "classnames": "^2.2.6",
     "fs": "^0.0.1-security",
+    "fstream": "^1.0.12",
     "highlight.js": "^9.15.6",
+    "js-yaml": "^3.13.1",
     "marked": "^0.6.2",
     "moment": "^2.23.0",
     "nouislider": "^12.1.0",
@@ -29,7 +31,8 @@
     "react-slick": "^0.23.2",
     "react-static": "^6.0.18",
     "react-static-plugin-sass": "^6.1.1",
-    "react-swipeable-views": "^0.13.0"
+    "react-swipeable-views": "^0.13.0",
+    "webpack-bundle-analyzer": "^3.3.2"
   },
   "devDependencies": {
     "eslint-config-react-tools": "1.x.x",
