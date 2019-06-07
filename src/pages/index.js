@@ -283,7 +283,9 @@ class IndexPage extends React.Component {
                 <GridItem xs={12} sm={12} md={6}>
                   <Card>
                     <CardHeader color="info">
-                      <h4 className={classes.planCardTitle}>Free Plan</h4>
+                      <h4 className={classes.planCardTitle}>
+                        Free (Local Storage)
+                      </h4>
                     </CardHeader>
                     <CardBody>
                       <List component="nav">
@@ -306,7 +308,9 @@ class IndexPage extends React.Component {
                 <GridItem xs={12} sm={12} md={6}>
                   <Card>
                     <CardHeader color="warning">
-                      <h4 className={classes.planCardTitle}>Premium Plan</h4>
+                      <h4 className={classes.planCardTitle}>
+                        Premium (Cloud Storage)
+                      </h4>
                     </CardHeader>
                     <CardBody>
                       <List component="nav">
@@ -440,7 +444,7 @@ class IndexPage extends React.Component {
                   <Button
                     color="twitter"
                     size="lg"
-                    href={Constants.forum.urls.en}
+                    href={Constants.contact.twitterEn}
                     target="_blank"
                     rel="noopener noreferrer"
                     fullWidth
@@ -455,7 +459,7 @@ class IndexPage extends React.Component {
                   <Button
                     color="white"
                     size="lg"
-                    href={Constants.forum.urls.en}
+                    href={'mailto:' + Constants.contact.email}
                     target="_blank"
                     rel="noopener noreferrer"
                     fullWidth
