@@ -6,6 +6,7 @@ import { List, ListItem, withStyles } from '@material-ui/core';
 import Button from 'components/CustomButtons/Button.jsx';
 
 import Constants from 'lib/Constants';
+import Logger from 'lib/Logger';
 
 import footerStyle from 'assets/jss/material-kit-react/components/footerStyle.jsx';
 
@@ -27,6 +28,7 @@ function Footer({ ...props }) {
             <ListItem className={classes.inlineBlock}>
               <Button
                 href="/terms"
+                onClick={() => Logger.track('Button', 'Terms')}
                 color="transparent"
                 className={classes.block}
               >
@@ -36,6 +38,7 @@ function Footer({ ...props }) {
             <ListItem className={classes.inlineBlock}>
               <Button
                 href="/privacy"
+                onClick={() => Logger.track('Button', 'Privacy')}
                 color="transparent"
                 className={classes.block}
               >
@@ -45,6 +48,7 @@ function Footer({ ...props }) {
             <ListItem className={classes.inlineBlock}>
               <Button
                 href="https://twitter.com/stacknote_app"
+                onClick={() => Logger.track('Button', 'Contact Twitter-En')}
                 color="transparent"
                 className={classes.block}
               >
@@ -58,6 +62,10 @@ function Footer({ ...props }) {
           &copy; {1900 + new Date().getYear()}&nbsp;
           <a
             href={Constants.contact.twitterEn}
+            onClick={() => {
+              Logger.track('Button', 'Contact Twitter-En');
+              Logger.track('Button', 'Footer author link');
+            }}
             className={aClasses}
             target="_blank"
           >
