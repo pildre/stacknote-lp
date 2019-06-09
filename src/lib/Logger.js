@@ -16,13 +16,14 @@ export default class Logger {
       ReactGA.initialize(process.env.GA_TRACKING_ID, {
         debug: false
       });
-      if (typeof document !== 'undefined') {
+      if (typeof window !== 'undefined') {
         ReactGA.pageview(window.location.pathname + window.location.search);
       }
     }
   }
 
   static track(category, action) {
+    Logger.debug(`Track, category: ${category}, action: ${action}`);
     if (process.env.ENV === 'production') {
       ReactGA.event({
         category: category,

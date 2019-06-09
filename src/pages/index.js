@@ -32,6 +32,8 @@ import Card from 'components/Card/Card.jsx';
 import CardBody from 'components/Card/CardBody.jsx';
 import CardHeader from 'components/Card/CardHeader.jsx';
 
+import Logger from 'lib/Logger';
+
 const indexPageStyle = {
   container,
   brand: {
@@ -115,6 +117,9 @@ class IndexPage extends React.Component {
           color="danger"
           size="lg"
           href={downloadButtonHref}
+          onClick={() =>
+            Logger.track('Button', `DL App for ${OSName} button clicked`)
+          }
           target="_blank"
           rel="noopener noreferrer"
           fullWidth
@@ -158,6 +163,12 @@ class IndexPage extends React.Component {
                       color="info"
                       size="lg"
                       href={Constants.app.web.url}
+                      onClick={() =>
+                        Logger.track(
+                          'Button',
+                          'Access App in browser button clicked'
+                        )
+                      }
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -347,7 +358,13 @@ class IndexPage extends React.Component {
                       <Button
                         color="info"
                         size="lg"
-                        href="https://stacknote.io"
+                        href={Constants.app.web.url}
+                        onClick={() =>
+                          Logger.track(
+                            'Button',
+                            'Access App in browser button clicked'
+                          )
+                        }
                         target="_blank"
                         rel="noopener noreferrer"
                         fullWidth
@@ -371,6 +388,7 @@ class IndexPage extends React.Component {
                     (日本語版フォーラムは
                     <a
                       href={Constants.forum.urls.ja}
+                      onClick={() => Logger.track('Button', 'Forum Ja')}
                       className={classes.block}
                       target="_blank"
                     >
@@ -382,6 +400,7 @@ class IndexPage extends React.Component {
                     color="github"
                     size="lg"
                     href={Constants.forum.urls.en}
+                    onClick={() => Logger.track('Button', 'Forum En')}
                     target="_blank"
                     rel="noopener noreferrer"
                     justIcon
@@ -406,6 +425,9 @@ class IndexPage extends React.Component {
                     Github page above. The creator's Twitter account is
                     <a
                       href={Constants.contact.twitterEn}
+                      onClick={() =>
+                        Logger.track('Button', 'Contact Twitter-En')
+                      }
                       className={classes.block}
                       target="_blank"
                     >
@@ -415,6 +437,7 @@ class IndexPage extends React.Component {
                     an
                     <a
                       href={'mailto:' + Constants.contact.email}
+                      onClick={() => Logger.track('Button', 'Contact Email')}
                       className={classes.block}
                       target="_blank"
                     >
@@ -430,6 +453,7 @@ class IndexPage extends React.Component {
                     color="github"
                     size="lg"
                     href={Constants.forum.urls.en}
+                    onClick={() => Logger.track('Button', 'Forum En')}
                     target="_blank"
                     rel="noopener noreferrer"
                     fullWidth
@@ -445,6 +469,7 @@ class IndexPage extends React.Component {
                     color="twitter"
                     size="lg"
                     href={Constants.contact.twitterEn}
+                    onClick={() => Logger.track('Button', 'Contact Twitter-En')}
                     target="_blank"
                     rel="noopener noreferrer"
                     fullWidth
@@ -460,6 +485,7 @@ class IndexPage extends React.Component {
                     color="white"
                     size="lg"
                     href={'mailto:' + Constants.contact.email}
+                    onClick={() => Logger.track('Button', 'Contact Email')}
                     target="_blank"
                     rel="noopener noreferrer"
                     fullWidth

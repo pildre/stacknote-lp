@@ -15,8 +15,9 @@ import { Apps, CloudDownload } from '@material-ui/icons';
 // core components
 import CustomDropdown from 'components/CustomDropdown/CustomDropdown.jsx';
 import Button from 'components/CustomButtons/Button.jsx';
-
 import headerLinksStyle from 'assets/jss/material-kit-react/components/headerLinksStyle.jsx';
+
+import Logger from 'lib/Logger';
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
@@ -24,6 +25,7 @@ function HeaderLinks({ ...props }) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
+          onClick={() => Logger.track('Button', 'Anchor to Features')}
           href="/#features"
           color="transparent"
           className={classes.navLink}
@@ -32,13 +34,19 @@ function HeaderLinks({ ...props }) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button href="/#plan" color="transparent" className={classes.navLink}>
+        <Button
+          href="/#plan"
+          onClick={() => Logger.track('Button', 'Anchor to Plan')}
+          color="transparent"
+          className={classes.navLink}
+        >
           PLAN
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
           href="/#download"
+          onClick={() => Logger.track('Button', 'Anchor to Download')}
           color="transparent"
           className={classes.navLink}
         >
@@ -55,13 +63,25 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/terms" className={classes.dropdownLink}>
+            <Link
+              to="/terms"
+              onClick={() => Logger.track('Button', 'Terms')}
+              className={classes.dropdownLink}
+            >
               Terms of Use
             </Link>,
-            <Link to="/privacy" className={classes.dropdownLink}>
+            <Link
+              to="/privacy"
+              onClick={() => Logger.track('Button', 'Privacy')}
+              className={classes.dropdownLink}
+            >
               Privacy Policy
             </Link>,
-            <Link to="/#contact" className={classes.dropdownLink}>
+            <Link
+              to="/#contact"
+              onClick={() => Logger.track('Button', 'Anchor to Contact')}
+              className={classes.dropdownLink}
+            >
               Contact
             </Link>
           ]}
