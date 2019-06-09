@@ -1,13 +1,15 @@
 import React from 'react';
 import axios from 'axios';
 import fs from 'fs';
+import dotenv from 'dotenv';
+dotenv.config();
 export default {
   siteRoot: 'https://lp.stacknote.io',
   stagingSiteRoot: 'http://localhost:3000',
   Document: ({ Html, Head, Body, children, siteData, renderMeta }) => (
     <Html lang="en-US">
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <title>Stacknote</title>
         <meta
           name="description"
