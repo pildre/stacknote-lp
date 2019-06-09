@@ -63,13 +63,25 @@ function HeaderLinks({ ...props }) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/terms" className={classes.dropdownLink}>
+            <Link
+              to="/terms"
+              onClick={() => Logger.track('Button', 'Terms')}
+              className={classes.dropdownLink}
+            >
               Terms of Use
             </Link>,
-            <Link to="/privacy" className={classes.dropdownLink}>
+            <Link
+              to="/privacy"
+              onClick={() => Logger.track('Button', 'Privacy')}
+              className={classes.dropdownLink}
+            >
               Privacy Policy
             </Link>,
-            <Link to="/#contact" className={classes.dropdownLink}>
+            <Link
+              to="/#contact"
+              onClick={() => Logger.track('Button', 'Anchor to Contact')}
+              className={classes.dropdownLink}
+            >
               Contact
             </Link>
           ]}
