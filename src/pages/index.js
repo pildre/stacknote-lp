@@ -10,7 +10,7 @@ import Chat from '@material-ui/icons/Chat';
 import CodeIcon from '@material-ui/icons/Code';
 import CloudUpload from '@material-ui/icons/CloudUpload';
 import image from 'assets/img/screen-shot-app-top.png';
-import stackCardGif from 'assets/img/stack_cards.gif';
+import stackCardGif from 'assets/img/stack_cards_ver2.gif';
 import imagesStyle from 'assets/jss/material-kit-react/imagesStyles.jsx';
 import sortCardsGif from 'assets/img/sort_cards.gif';
 import unfurlingLinksGif from 'assets/img/unfurling_links.gif';
