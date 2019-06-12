@@ -13,7 +13,7 @@ import image from 'assets/img/screen-shot-app-top.png';
 import stackCardGif from 'assets/img/stack_cards.gif';
 import imagesStyle from 'assets/jss/material-kit-react/imagesStyles.jsx';
 import sortCardsGif from 'assets/img/sort_cards.gif';
-import unfurlingLinksPng from 'assets/img/unfurling_links.png';
+import unfurlingLinksGif from 'assets/img/unfurling_links.gif';
 
 import { container } from 'assets/jss/material-kit-react.jsx';
 import List from '@material-ui/core/List';
@@ -225,7 +225,7 @@ class IndexPage extends React.Component {
                   </h5>
                 </GridItem>
                 <GridItem xs={12} sm={12} md={6}>
-                  <img src={unfurlingLinksPng} className={classes.imgRaised} />
+                  <img src={unfurlingLinksGif} className={classes.imgRaised} />
                 </GridItem>
               </GridContainer>
             </div>
