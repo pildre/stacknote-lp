@@ -2,14 +2,14 @@ export default {
   appName: 'Stacknote ß',
   app: {
     mac: {
-      version: '0.1',
+      version: '0.2',
       downloadLink:
-        'https://firebasestorage.googleapis.com/v0/b/stacknote-production.appspot.com/o/downloads%2Fmac_releases%2FStacknote-0.1.0.dmg?alt=media&token=4ab3703c-9b06-4469-87e0-0632dbbf273a'
+        'https://firebasestorage.googleapis.com/v0/b/stacknote-production.appspot.com/o/downloads%2Fmac_releases%2FStacknote-0.2.0.dmg?alt=media&token=13274e9c-6ba7-4031-8e26-58e909f7382f'
     },
     windows: {
-      version: '0.1',
+      version: '0.2',
       downloadLink:
-        'https://firebasestorage.googleapis.com/v0/b/stacknote-production.appspot.com/o/downloads%2Fwindows_releases%2FStacknote-Setup-0.1.0.exe?alt=media&token=70f02e2b-b03b-4cec-aca6-09a1b9acb866'
+        'https://firebasestorage.googleapis.com/v0/b/stacknote-production.appspot.com/o/downloads%2Fwindows_releases%2FStacknote%20Setup-0.2.0.exe?alt=media&token=7ce7e0e4-7731-444c-af0d-c93510c6db83'
     },
     linux: {},
     web: {
