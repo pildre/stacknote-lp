@@ -498,6 +498,25 @@ class IndexPage extends React.Component {
                 </GridItem>
               </GridContainer>
             </div>
+            {/* ---------- Producthunt ---------- */}
+            <div className={classes.sectionCentered}>
+              <GridContainer justify="center">
+                <GridItem xs={12} sm={12} md={12}>
+                  <a
+                    href="https://www.producthunt.com/posts/stacknote?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-stacknote"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=158304&theme=dark"
+                      alt="Stacknote - Make your writing surprisingly efficient | Product Hunt Embed"
+                      style={{ width: '250px', height: '54px' }}
+                      width="250px"
+                      height="54px"
+                    />
+                  </a>
+                </GridItem>
+              </GridContainer>
+            </div>
           </div>
         </div>
         <Footer />
