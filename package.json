@@ -18,7 +18,7 @@
     "dotenv": "^8.0.0",
     "fs": "^0.0.1-security",
     "fstream": "^1.0.12",
-    "highlight.js": "^9.15.6",
+    "highlight.js": "^10.1.2",
     "js-yaml": "^3.13.1",
     "marked": "^0.6.2",
     "moment": "^2.23.0",
